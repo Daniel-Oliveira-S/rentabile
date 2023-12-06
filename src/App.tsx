@@ -3,7 +3,7 @@ import "./App.css";
 import { CheckCircle, CheckFat } from "@phosphor-icons/react/dist/ssr";
 import logo from "./assets/logo.png";
 import { useState, useEffect } from "react";
-import { ChevronLeft, ChevronRight } from "lucide-react";
+import { ChevronLeft, ChevronRight, Instagram, Phone } from "lucide-react";
 function App() {
   const [currentSlide, setCurrentSlide] = useState(0);
 
@@ -445,15 +445,50 @@ function App() {
           />
           <div id="form-text">
             <h1>Vamos rentabilizar?</h1>
-            <p>Fale com um especialista</p>
-            <div id="form-button">
-              <a href="" id="whatsapp">
-                whatsapp
-              </a>
-            </div>
+            <a>Fale com um especialista</a>
           </div>
         </div>
       </section>
+
+      <footer>
+        <div id="footer-content">
+          <div id="footer-text">
+            <p>Calçada dos Ipês, 51</p>
+            <p>Centro Comercial Alphaville</p>
+            <p>Alphaville - Barueri/SP</p>
+            <p>CEP 06453 - 025</p>
+          </div>
+          <div id="footer-social">
+            <div className="social-icon">
+              <Phone size={20} color="#392f6f" />
+              <p>+55 (11) 4195 - 6006</p>
+            </div>
+            <div className="social-icon">
+              <Instagram size={20} />
+              <a href="">Segue lá</a>
+            </div>
+          </div>
+          <div id="footer-product">
+            <p>A Rentabileasy é um produto</p>
+            <img
+              src="https://rentabileasy.com.br/wp-content/uploads/2022/06/AbileConsultingGroup_Logo_Negatva.png"
+              alt=""
+              width={300}
+            />
+          </div>
+        </div>
+        <div id="footer-by">
+          <p>&copy; Copyright 2023 Abile • Todos os direitos reservados</p>
+          <div className="by-crowd">
+            <p>Desenvolvido por</p>
+            <img
+              src="http://rentabileasy.com.br/wp-content/uploads/2023/12/logo.3942e0c5ddc8cb64ca03f061264c9d15-1.png"
+              alt=""
+              width={150}
+            />
+          </div>
+        </div>
+      </footer>
     </body>
   );
 }

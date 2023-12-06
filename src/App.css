@@ -4,7 +4,6 @@
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
-  
 }
 #header {
   width: 100%;
@@ -715,7 +714,8 @@ li {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  background: #49ff81;
+  align-items: center;
+  background: #18a74b;
   margin-top: 4rem;
   border-radius: 1rem;
 }
@@ -728,7 +728,7 @@ li {
 #form-text {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 0.5rem;
   padding: 2rem;
 }
 
@@ -759,17 +759,115 @@ li {
   transition: all 0.3s ease-in-out;
 }
 
-#form-button a {
+#form-text a {
   font-family: "Syne", sans-serif;
   font-size: 1.5rem;
   color: #ffff;
   font-weight: 400;
   transition: all 0.3s ease-in-out;
   padding: 1rem 2rem;
+  background: none;
+  text-align: center;
+  border: 2px solid #fff;
+  border-radius: 0.25rem;
 }
-#form-button a:hover {
+#form-text a:hover {
   color: #392f6f;
+  background: #ffff;
+  padding: 1rem 2rem;
 }
 #form-button:hover {
   background: #fff;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 2rem;
+  gap: 1rem;
+}
+
+#footer-content {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 2rem;
+  background: #18a74b;
+}
+
+#footer-text {
+  display: flex;
+  flex-direction: column;
+  font-family: "Syne", sans-serif;
+  color: #fff;
+  font-size: 1.25rem;
+  gap: 0.5rem;
+}
+
+#footer-social {
+  display: flex;
+  flex-direction: column;
+  font-family: "Syne", sans-serif;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.social-icon {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  gap: 0.5rem;
+  font-size: 1.25rem;
+}
+
+.social-icon:nth-child(1) {
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+
+.social-icon:nth-child(1):hover {
+  color: #392f6f;
+}
+
+.social-icon:nth-child(2) {
+  background: #fff;
+  padding: 1rem 2rem 1rem 1rem;
+}
+
+#footer-product {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+#footer-product p {
+  font-family: "Syne", sans-serif;
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+#footer-by {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0 8rem;
+}
+
+#footer-by p {
+  font-family: "Syne", sans-serif;
+  font-size: 1rem;
+  color: #a0a0a0;
+}
+
+.by-crowd {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
 }
