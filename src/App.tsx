@@ -103,7 +103,7 @@ function App() {
 
           <img
             src="http://rentabileasy.com.br/wp-content/uploads/2023/10/RENTABILEASY-img01-2.png"
-            width={1250}
+            width={600}
             alt=""
           />
         </div>
