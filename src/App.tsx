@@ -53,7 +53,7 @@ function App() {
   };
 
   useEffect(() => {
-    const timer = setInterval(nextSlide, 3000); // Change slide every 3 seconds
+    const timer = setInterval(nextSlide, 5000); // Change slide every 5 seconds
     return () => clearInterval(timer); // Clear timer on component unmount
   }, []);
 
