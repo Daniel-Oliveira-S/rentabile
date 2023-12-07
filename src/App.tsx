@@ -1,9 +1,13 @@
 "use client";
 import "./App.css";
-import { CheckCircle, CheckFat } from "@phosphor-icons/react/dist/ssr";
+import {
+  CheckCircle,
+  CheckFat,
+  InstagramLogo,
+} from "@phosphor-icons/react/dist/ssr";
 import logo from "./assets/logo.png";
 import { useState, useEffect } from "react";
-import { ChevronLeft, ChevronRight, Instagram, Phone } from "lucide-react";
+import { ChevronLeft, ChevronRight, Phone } from "lucide-react";
 function App() {
   const [currentSlide, setCurrentSlide] = useState(0);
 
@@ -439,9 +443,9 @@ function App() {
       <section id="form">
         <div id="form-content">
           <img
-            src="http://rentabileasy.com.br/wp-content/uploads/2023/11/moça.png"
+            src="http://rentabileasy.com.br/wp-content/uploads/2023/12/image-59.png"
             alt=""
-            width={700}
+            width={400}
           />
           <div id="form-text">
             <h1>Vamos rentabilizar?</h1>
@@ -464,7 +468,7 @@ function App() {
               <p>+55 (11) 4195 - 6006</p>
             </div>
             <div className="social-icon">
-              <Instagram size={20} />
+              <InstagramLogo weight="fill" stroke="#fff" size={30} />
               <a href="">Segue lá</a>
             </div>
           </div>
