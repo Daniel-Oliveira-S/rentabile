@@ -468,7 +468,7 @@ function App() {
               <p>+55 (11) 4195 - 6006</p>
             </div>
             <div className="social-icon">
-              <InstagramLogo weight="fill" stroke="#fff" size={30} />
+              <InstagramLogo color="#4aff81" size={30} />
               <a href="">Segue lá</a>
             </div>
           </div>
