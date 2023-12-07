@@ -463,6 +463,7 @@ li {
   gap: 2rem;
   margin: 0 auto;
   height: 500px;
+  margin-bottom: -12rem;
 }
 
 .price {
@@ -553,7 +554,7 @@ li {
   justify-content: center;
   align-items: center;
   width: 100%;
-  margin-top: 5rem;
+  margin-top: 10rem;
 }
 
 #for-title {
