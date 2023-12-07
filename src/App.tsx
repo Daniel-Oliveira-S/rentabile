@@ -223,7 +223,7 @@ function App() {
             </p>
           </div>
           <img
-            src="http://rentabileasy.com.br/wp-content/uploads/2023/11/comparar-1.png"
+            src="http://rentabileasy.com.br/wp-content/uploads/2023/12/comparar-3.png"
             alt=""
           />
         </div>
