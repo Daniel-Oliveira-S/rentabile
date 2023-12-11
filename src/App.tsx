@@ -8,28 +8,44 @@ import {
 import logo from "./assets/logo.png";
 import { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight, Phone } from "lucide-react";
+import { Button } from "./components/button";
 function App() {
   const [currentSlide, setCurrentSlide] = useState(0);
+  const [mobile, setMobile] = useState(false);
+
+  useEffect(() => {
+    function handleResize() {
+      setMobile(window.innerWidth <= 768);
+    }
+
+    window.addEventListener("resize", handleResize);
+    handleResize();
+  }, []);
+
+  useEffect(() => {
+    const timer = setInterval(nextSlide, 5000); // Change slide every 5 seconds
+    return () => clearInterval(timer); // Clear timer on component unmount
+  }, []);
 
   // Define your slides here
   const slides = [
     {
       name: "Vera Maria Garaude - Garaude escritório de advocacia",
       img: "https://rentabileasy.com.br/wp-content/uploads/2022/06/garaude.webp",
-      text: "Toda a minha familia é cliente. Com o falecimento do meu pai, nos ajudaram muito com toda a assessoria que nós precisavamos em nossas empresas e também no meu escritório. Foram muito prestativos, atenciosos e competentes. Há aproximadamente 7 anos, contamos com os serviços de contabilidade, assessoria tributária, empresarial, impostos de renda (PJ e PF), entre outros. E os melhores benefícios foram a redução de impostos, organização operacional e tranquilidade por saber que estamos trabalhando com uma empresa séria e competente",
+      text: "Clientes há 7 anos, a empresa oferece assessoria completa. Após o falecimento de meu pai, foram cruciais na gestão empresarial, contábil e tributária, proporcionando redução de impostos e tranquilidade operacional.",
       class: "slide-prev",
     },
     {
       name: "Silvana Perez - Espaço Ser - Saúde, Educação e Reabilitação",
       img: "https://rentabileasy.com.br/wp-content/uploads/2022/06/EspacoSER_Logo-150x150.webp",
-      text: "Consideramos o atendimento muito eficiente e prático. A consultoria é excelente, estáo sempre dispostos a nos auxiliar e informar quando necessário. Conseguimos trabalhar com tranquilidade sabendo que estáo cuidando da parte contábil do nosso negócio. A partir do momento que passamos a ser atendidas pela empresa, tivemos mais tempo e criatividade para investir em ideias e turbinar nossonegócio, além de um tempo maior para atendimentos de mais qualidade. Com certeza recomendamos para outras",
+      text: "Atendimento eficiente e consultoria excelente. A empresa proporciona tranquilidade na gestão contábil, permitindo mais tempo e criatividade para investir no negócio. Recomendamos para outras empresas sem hesitação.",
       class: "slide",
     },
 
     {
       name: "Juliana Rodrigues - All smiles Odontologia",
       img: "https://rentabileasy.com.br/wp-content/uploads/2022/06/allsmiles-1-150x150.png",
-      text: "Enxergo como uma empresa idônea e com profissionais muito competentes, todos os departamentos estáo sempre prontos para me atender. Reestruturou a All Smiles Odontologia, nos colocando em um novo patamar e, desta forma, aumentando nossa lucratividade de maneira relevante. Sempre que tenho a oportunidade, recomendo para outras empresas",
+      text: "Empresa idônea, profissionais competentes e atenciosos. Reestruturou a All Smiles Odontologia, elevando-nos a um novo patamar e impulsionando nossa lucratividade. Recomendo a outras empresas.",
       class: "slide-next",
     },
     // Add as many slides as you want
@@ -56,16 +72,22 @@ function App() {
     });
   };
 
-  useEffect(() => {
-    const timer = setInterval(nextSlide, 5000); // Change slide every 5 seconds
-    return () => clearInterval(timer); // Clear timer on component unmount
-  }, []);
+  // divider
+
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  function handleMenu() {
+    setIsMenuOpen(!isMenuOpen);
+  }
 
   return (
     <body>
       <header id="header">
-        <nav id="nav">
-          <img src={logo} width={350} alt="" className="" />
+        <nav id={`nav${isMenuOpen ? "-true" : ""}`}>
+          <img src={logo} alt="" className="logo" />
+
+          <button id="close" onClick={handleMenu}>
+            X
+          </button>
           <ul id="menu">
             <li>
               <a href="">O que é?</a>
@@ -100,23 +122,21 @@ function App() {
               profissionais e tenha o acompanhamento com especialistas de
               negócios dedicados ao crescimento de sua empresa.
             </p>
-            <a href="" id="transform">
-              Quero transformar minha gestão empresarial
+            <a href="#form" id="transform">
+              Quero transformar minha contabilidade
             </a>
           </div>
 
           <img
             src="http://rentabileasy.com.br/wp-content/uploads/2023/10/RENTABILEASY-img01-2.png"
-            width={600}
             alt=""
           />
         </div>
       </section>
 
+      <div className="blue"></div>
       <div className="presentation">
         <iframe
-          width="755"
-          height="425"
           src="https://www.youtube.com/embed/yLkQEZzUzxw"
           title="Vídeo site"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -124,45 +144,21 @@ function App() {
       </div>
 
       <div id="offers">
-        <div id="offers-content">
-          <div className="icon-text">
-            <CheckCircle
-              className="icon-check"
-              weight="fill"
-              size={80}
-              color="#40ff76"
-            />
-            <p>
-              Garanta o melhor regime tributário e fiscal para a sua empresa
-            </p>
-          </div>
-          <div className="icon-text">
-            <CheckCircle
-              className="icon-check"
-              weight="fill"
-              size={80}
-              color="#40ff76"
-            />
-            <p>Controles e processos que evitam desperdicios</p>
-          </div>
-          <div className="icon-text">
-            <CheckCircle
-              className="icon-check"
-              weight="fill"
-              size={80}
-              color="#40ff76"
-            />
-            <p>Visão completa de todos os indicadores de resultados</p>
-          </div>
-          <div className="icon-text">
-            <CheckCircle
-              className="icon-check"
-              weight="fill"
-              size={80}
-              color="#40ff76"
-            />
-            <p>Atendimento 100% humanizado, lado a lado com você</p>
-          </div>
+        <div className="icon-text">
+          <CheckCircle className="icon-check" weight="fill" color="#40ff76" />
+          <p>Garanta o melhor regime tributário e fiscal para a sua empresa</p>
+        </div>
+        <div className="icon-text">
+          <CheckCircle className="icon-check" weight="fill" color="#40ff76" />
+          <p>Controles e processos que evitam desperdicios</p>
+        </div>
+        <div className="icon-text">
+          <CheckCircle className="icon-check" weight="fill" color="#40ff76" />
+          <p>Visão completa de todos os indicadores de resultados</p>
+        </div>
+        <div className="icon-text">
+          <CheckCircle className="icon-check" weight="fill" color="#40ff76" />
+          <p>Atendimento 100% humanizado, lado a lado com você</p>
         </div>
       </div>
 
@@ -171,7 +167,11 @@ function App() {
           <div id="service-icon-text">
             <h1>Oferecemos além da contabilidade:</h1>
             <div className="service-icon">
-              <CheckFat weight="fill" color="#fff" size={35} />
+              {mobile ? (
+                <CheckFat className="check-service" size={35} weight="fill" />
+              ) : (
+                <CheckFat className="check" weight="fill" />
+              )}
               <p>
                 Elaboração o Plano de Negócios (Planejamento Estratégico,
                 Societário, Tributário e Financeiro)
@@ -179,13 +179,17 @@ function App() {
             </div>
             <div className="divider"></div>
             <div className="service-icon">
-              <CheckFat weight="fill" color="#fff" size={20} />
+              <CheckFat className="check-service" weight="fill" />
               <p>Estruturação e Gestão de Processos;</p>
             </div>
             <div className="divider"></div>
 
             <div className="service-icon">
-              <CheckFat weight="fill" color="#fff" size={35} />
+              {mobile ? (
+                <CheckFat className="check-service" size={35} weight="fill" />
+              ) : (
+                <CheckFat className="check" weight="fill" />
+              )}
               <p>
                 Atuação com estratégias financeiras para geração de recursos
                 através de incentivos fiscais;
@@ -194,13 +198,13 @@ function App() {
             <div className="divider"></div>
 
             <div className="service-icon">
-              <CheckFat weight="fill" color="#fff" size={20} />
+              <CheckFat className="check-service" weight="fill" />
               <p>Gestão financeira e fiscal</p>
             </div>
             <div className="divider"></div>
 
             <div className="service-icon">
-              <CheckFat weight="fill" color="#fff" size={20} />
+              <CheckFat className="check-service" weight="fill" />
               <p>Tudo isso em paralelo as rotinas contábeis</p>
             </div>
           </div>
@@ -208,66 +212,60 @@ function App() {
           <img
             src="http://rentabileasy.com.br/wp-content/uploads/2023/10/img33.png"
             alt=""
-            width={600}
           />
         </div>
       </section>
 
       <section id="jobs">
-        <div id="jobs-content">
-          <div id="jobs-text">
-            <h1>Pra quem não tem pra onde ir, qualquer caminho serve.</h1>
-            <p>
-              O caminho mais fácil nem sempre é o correto, entenda o nosso
-              propósito para rentabilizar o seu negócio.
-            </p>
-          </div>
+        <div id="jobs-text">
+          <h1>Pra quem não tem pra onde ir, qualquer caminho serve.</h1>
+          <p>
+            O caminho mais fácil nem sempre é o correto, entenda o nosso
+            propósito para rentabilizar o seu negócio.
+          </p>
+        </div>
+        {mobile ? (
+          <img
+            src="http://rentabileasy.com.br/wp-content/uploads/2023/12/Group-4-1.png"
+            alt=""
+            className="compare-mob"
+          />
+        ) : (
           <img
             src="http://rentabileasy.com.br/wp-content/uploads/2023/12/comparar-3.png"
             alt=""
           />
-        </div>
+        )}
       </section>
 
       <section id="circles">
-        <div id="circles-content">
-          <div id="title-descri">
-            <h1>Evolua de uma contabilidade, para uma parceira de negócios</h1>
-            <p>Experts, contadores e administradores à sua disposição:</p>
-          </div>
-          <div id="circle-text">
-            <div className="circle-text">
-              <img
-                src="http://rentabileasy.com.br/wp-content/uploads/2023/11/Bolota01.png"
-                alt=""
-                width={300}
-              />
-              <h1>Não são robôs, são experts.</h1>
-            </div>
-            <div className="circle-text">
-              <img
-                src="http://rentabileasy.com.br/wp-content/uploads/2023/11/bolota02.png"
-                alt=""
-                width={300}
-              />
-              <h1>Parcerias e Novos Negócios.</h1>
-            </div>
-            <div className="circle-text">
-              <img
-                src="http://rentabileasy.com.br/wp-content/uploads/2023/11/bolota04.png"
-                alt=""
-                width={300}
-              />
-              <h1>Consultoria Estratégica.</h1>
-            </div>
-          </div>
-          <div id="circle-cards">
+        <div id="title-descri">
+          <h1>
+            Evolua de uma contabilidade, para uma{" "}
+            <span>parceira de negócios</span>
+          </h1>
+          <p>Experts, contadores e administradores à sua disposição:</p>
+        </div>
+        <div id="circle-text">
+          <div className="circle-title">
+            <img
+              src="http://rentabileasy.com.br/wp-content/uploads/2023/11/Bolota01.png"
+              alt=""
+            />
+            <h1>Não são robôs, são experts.</h1>
             <div className="card">
               <p>
                 Profissionais com visão de sócios e donos, para fortalecer seu
                 negócio e seus planos futuros;
               </p>
             </div>
+          </div>
+          <div className="circle-title">
+            <img
+              src="http://rentabileasy.com.br/wp-content/uploads/2023/11/bolota02.png"
+              alt=""
+            />
+            <h1>Parcerias e Novos Negócios.</h1>
             <div className="card">
               <p>
                 Traremos ainda sugestões de inovação, ferramentas parceiras,
@@ -275,6 +273,13 @@ function App() {
                 Consultoria, Certificado digital, etc
               </p>
             </div>
+          </div>
+          <div className="circle-title">
+            <img
+              src="http://rentabileasy.com.br/wp-content/uploads/2023/11/bolota04.png"
+              alt=""
+            />
+            <h1>Consultoria Estratégica.</h1>
             <div className="card">
               <p>
                 Estamos há mais de 40 anos rentabilizando negócios, dando total
@@ -282,56 +287,51 @@ function App() {
               </p>
             </div>
           </div>
-          <a href="">Quero essa equipe comigo!</a>
         </div>
+
+        <a href="">Quero essa equipe comigo!</a>
       </section>
 
       <section id="prices">
-        <div id="price-text">
-          <h1>
-            O melhor custo-benefício para você estruturar sua empresa a curto,
-            médio e longo prazo:
-          </h1>
-        </div>
+        <h1>
+          O melhor custo-benefício para você estruturar sua empresa a curto,
+          médio e longo prazo:
+        </h1>
         <div id="price-cards">
           <div className="price">
             <h2>Para ME</h2>
             <div className="divider"></div>
-            <div className="price-text">
+            <div className="card-text">
               <h1>A partir de:</h1>
               <h2>R$ 299,00</h2>
-              <a href="">Quero contratar</a>
+              <Button href="">Quero contratar</Button>
             </div>
           </div>
           <div className="price">
             <h2>Para EPP</h2>
             <div className="divider"></div>
-            <div className="price-text">
+            <div className="card-text">
               <h1>A partir de:</h1>
               <h2>R$ 599,00</h2>
-              <a href="">Quero contratar</a>
+              <Button href="">Quero contratar</Button>
             </div>
           </div>
           <div className="price">
             <h2>Gestão completa</h2>
             <div className="divider"></div>
-            <div className="price-text">
+            <div className="card-text">
               <p>
                 Acesse um orçamento personalizado sob medida com diagnóstico
                 gratuito
               </p>
-              <a href="">Quero contratar</a>
+              <Button href="">Quero contratar</Button>
             </div>
           </div>
         </div>
       </section>
 
       <section id="for">
-        <div id="for-content">
-          <div id="for-title">
-            <h1>Empreendedores que mais rentabilizam com a gente:</h1>
-          </div>
-        </div>
+        <h1>Empreendedores que mais rentabilizam com a gente:</h1>
         <div id="for-icons">
           <div className="icon">
             <img
@@ -418,25 +418,23 @@ function App() {
 
       <section id="testimonials">
         <h1>Nossos clientes vendem por nós: </h1>
-        <div id="testimonials-content">
-          <div className="slide-transition">
-            <button onClick={prevSlide}>
-              <ChevronLeft />{" "}
-            </button>
-            <div className={`slide ${slides[currentSlide].class}`}>
-              <p className="">{slides[currentSlide].text}</p>
-              <img
-                width={100}
-                className=""
-                src={slides[currentSlide].img}
-                alt=""
-              />
-              <p className=""> {slides[currentSlide].name}</p>
-            </div>
-            <button onClick={nextSlide}>
-              <ChevronRight />
-            </button>
+        <div className="slide-transition">
+          <button onClick={prevSlide}>
+            <ChevronLeft />{" "}
+          </button>
+          <div className={`slide ${slides[currentSlide].class}`}>
+            <p className="">{slides[currentSlide].text}</p>
+            <img
+              width={100}
+              className=""
+              src={slides[currentSlide].img}
+              alt=""
+            />
+            <p className=""> {slides[currentSlide].name}</p>
           </div>
+          <button onClick={nextSlide}>
+            <ChevronRight />
+          </button>
         </div>
       </section>
 
@@ -445,7 +443,6 @@ function App() {
           <img
             src="http://rentabileasy.com.br/wp-content/uploads/2023/12/image-59.png"
             alt=""
-            width={400}
           />
           <div id="form-text">
             <h1>Vamos rentabilizar?</h1>
@@ -467,10 +464,10 @@ function App() {
               <Phone size={20} color="#392f6f" />
               <p>+55 (11) 4195 - 6006</p>
             </div>
-            <div className="social-icon">
-              <InstagramLogo color="#4aff81" size={30} />
-              <a href="">Segue lá</a>
-            </div>
+            <a href="" className="social-icon">
+              <InstagramLogo color="#3eb161" size={30} />
+              <p>Segue lá</p>
+            </a>
           </div>
           <div id="footer-product">
             <p>A Rentabileasy é um produto</p>
