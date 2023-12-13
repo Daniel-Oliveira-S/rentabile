@@ -31,7 +31,7 @@ header {
 #nav {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   padding: 0.75rem;
 }
 
@@ -148,6 +148,7 @@ header {
   height: 100%;
   width: 100%;
   gap: 2rem;
+  margin: 4rem 0;
 }
 
 .icon-text {
@@ -158,6 +159,11 @@ header {
   width: 90%;
   margin: 0 auto;
   gap: 0.75rem;
+}
+
+.icon-text img {
+  margin-left: 0.75rem;
+  margin-top: 1rem;
 }
 
 .icon-check {
@@ -222,13 +228,14 @@ header {
 .service-icon p {
   font-family: "Syne", sans-serif;
   font-size: 1.15rem;
-  color: #fff;
+  color: #4aff81;
 }
 
 .check-service {
   font-size: 1rem;
-  color: #4aff81;
+  color: #fff;
 }
+
 .services-content img {
   width: 100px;
 }
@@ -255,6 +262,16 @@ header {
   font-weight: 700;
   color: #392f6f;
   text-align: center;
+}
+
+.div-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.div-text img {
+  display: none;
 }
 #jobs-text p {
   font-family: "Syne", sans-serif;
@@ -688,56 +705,48 @@ footer {
   margin-bottom: 2rem;
 }
 
-@media screen and (min-width: 834px) {
+@media screen and (min-width: 1280px) {
   #header {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    width: 100%;
+    height: 100px;
   }
-  #nav .logo {
-    width: 320px;
-  }
+
   #nav {
     display: flex;
     flex-direction: row;
     align-items: center;
-    max-width: 100%;
-    margin: 0 auto;
-    gap: 1rem;
+    width: 100%;
   }
   #nav > a {
-    display: flex;
+    display: block;
   }
-
   #open {
-    border: 2px solid #392f6f;
-    color: #392f6f;
-    border-radius: 0.4rem;
     padding: 1rem;
-    font-family: "Syne", sans-serif;
-    font-size: 1.125rem;
-
-    transition: all 0.3s ease;
-  }
-
-  #open:hover {
-    border: 2px solid #fff;
-    background: #18a74b;
-    color: #fff;
-  }
-  #change {
-    background: #392f6f;
-    padding: 0.75rem 2rem;
-    color: #fff;
-    font-family: "Syne", sans-serif;
+    border: 2px solid #392f6f;
     border-radius: 0.5rem;
-    transition: all 0.3s ease;
+    font-size: 0.975rem;
+    font-weight: 400;
+    font-family: "Poppins", sans-serif;
+    color: #392f6f;
+    margin: 0 1rem;
+    text-align: center;
   }
 
-  #change:hover {
-    background: #18a74b;
+  #change {
+    padding: 1rem;
+    border: 2px solid #392f6f;
+    border-radius: 0.5rem;
+    font-size: 0.975rem;
+    text-align: center;
+    font-weight: 400;
+    font-family: "Poppins", sans-serif;
     color: #fff;
+    background: #392f6f;
+    padding: 0.25rem 2rem;
   }
   #nav button {
     display: none;
@@ -748,37 +757,42 @@ footer {
     justify-content: center;
     align-items: center;
     list-style: none;
-    gap: 1rem;
+    gap: 2rem;
+    width: 41%;
   }
 
-  #menu li > a:hover {
-    color: #18a74b;
-    border-bottom: 2px solid #18a74b;
+  #menu li a:hover {
+    border-bottom: 2px solid #4aff81;
+    color: #4aff81;
   }
-  #menu li {
-    margin: 0 0.25rem;
-  }
+
   #hero {
     height: 100vh;
   }
 
   #hero-content {
-    display: grid;
-    grid-template-columns: 40% 40%;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
+  }
+  .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
   }
 
   #hero-content img {
-    width: 100%;
+    width: 40%;
     margin-top: 2rem;
   }
 
   #hero-text {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: start;
+
+    max-width: 48%;
   }
 
   .blue {
@@ -798,7 +812,6 @@ footer {
     margin-top: -15rem;
   }
   #offers {
-    display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
@@ -817,7 +830,6 @@ footer {
   }
 
   #services-content {
-    display: flex;
     flex-direction: row;
     margin: 0;
     justify-content: space-between;
@@ -827,12 +839,19 @@ footer {
     min-width: 600px;
   }
   .check {
-    color: #18a74b;
+    color: #fff;
     font-size: 1.25rem;
   }
 
   #jobs-text {
-    width: 40%;
+    width: 80%;
+  }
+
+  .div-text {
+    gap: 3rem;
+  }
+  .div-text img {
+    display: flex;
   }
 
   #jobs-text h1 {
@@ -849,16 +868,28 @@ footer {
     font-size: 2rem;
   }
   #circle-text {
-    display: grid;
-    grid-template-columns: repeat(3, 30%);
+    flex-direction: row;
     justify-content: space-between;
-    gap: 2rem;
+    align-items: center;
+
+    gap: 1rem;
     padding: 0 5rem;
-    margin: 0 auto;
+    margin: 3rem auto;
+  }
+
+  .circle-title {
+    gap: 2rem;
+    width: 40%;
+  }
+  .circle-title h1 {
+    font-size: 1.8rem;
+  }
+
+  .card {
+    padding: 1rem 1rem;
   }
 
   #price-cards {
-    display: flex;
     flex-direction: row;
     margin-top: 2rem;
     margin-bottom: -8rem;
@@ -891,11 +922,12 @@ footer {
   #for-icons {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    gap: 3rem;
+    gap: 0rem;
   }
 
   .icon {
-    padding: 0;
+    padding: 1rem;
+    margin-top: 1rem;
   }
   .slide {
     padding: 3rem 2rem;

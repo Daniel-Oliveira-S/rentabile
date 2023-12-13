@@ -114,23 +114,25 @@ function App() {
       </header>
       <section id="hero">
         <div id="hero-content">
-          <div id="hero-text">
-            <h1>Mais que uma contabilidade, seu</h1>
-            <h1>Parceiro de Negócios</h1>
-            <p>
-              Tenha suas rotinas financeiras, fiscais e contábeis nas mãos de
-              profissionais e tenha o acompanhamento com especialistas de
-              negócios dedicados ao crescimento de sua empresa.
-            </p>
-            <a href="#form" id="transform">
-              Quero transformar minha contabilidade
-            </a>
-          </div>
+          <div className="container">
+            <div id="hero-text">
+              <h1>Mais que uma contabilidade, seu</h1>
+              <h1>Parceiro de Negócios</h1>
+              <p>
+                Tenha suas rotinas financeiras, fiscais e contábeis nas mãos de
+                profissionais e tenha o acompanhamento com especialistas de
+                negócios dedicados ao crescimento de sua empresa.
+              </p>
+              <a href="#form" id="transform">
+                Quero transformar minha contabilidade
+              </a>
+            </div>
 
-          <img
-            src="http://rentabileasy.com.br/wp-content/uploads/2023/10/RENTABILEASY-img01-2.png"
-            alt=""
-          />
+            <img
+              src="http://rentabileasy.com.br/wp-content/uploads/2023/10/RENTABILEASY-img01-2.png"
+              alt=""
+            />
+          </div>
         </div>
       </section>
 
@@ -147,18 +149,38 @@ function App() {
         <div className="icon-text">
           <CheckCircle className="icon-check" weight="fill" color="#40ff76" />
           <p>Garanta o melhor regime tributário e fiscal para a sua empresa</p>
+          <img
+            src="http://rentabileasy.com.br/wp-content/uploads/2023/12/Group-7-1.png"
+            alt=""
+            width={150}
+          />
         </div>
         <div className="icon-text">
           <CheckCircle className="icon-check" weight="fill" color="#40ff76" />
           <p>Controles e processos que evitam desperdicios</p>
+          <img
+            src="http://rentabileasy.com.br/wp-content/uploads/2023/12/Group-7-1.png"
+            alt=""
+            width={150}
+          />
         </div>
         <div className="icon-text">
           <CheckCircle className="icon-check" weight="fill" color="#40ff76" />
           <p>Visão completa de todos os indicadores de resultados</p>
+          <img
+            src="http://rentabileasy.com.br/wp-content/uploads/2023/12/Group-7-1.png"
+            alt=""
+            width={150}
+          />
         </div>
         <div className="icon-text">
           <CheckCircle className="icon-check" weight="fill" color="#40ff76" />
           <p>Atendimento 100% humanizado, lado a lado com você</p>
+          <img
+            src="http://rentabileasy.com.br/wp-content/uploads/2023/12/Group-7-1.png"
+            alt=""
+            width={150}
+          />
         </div>
       </div>
 
@@ -218,10 +240,23 @@ function App() {
 
       <section id="jobs">
         <div id="jobs-text">
-          <h1>Pra quem não tem pra onde ir, qualquer caminho serve.</h1>
+          <div className="div-text">
+            <img
+              src="http://rentabileasy.com.br/wp-content/uploads/2023/12/Group-5-1.png"
+              width={150}
+              alt=""
+            />
+            <h1>Para quem não tem para onde ir, qualquer caminho serve</h1>
+            <img
+              src="http://rentabileasy.com.br/wp-content/uploads/2023/12/Group-5-1.png"
+              width={150}
+              alt=""
+            />
+          </div>
           <p>
-            O caminho mais fácil nem sempre é o correto, entenda o nosso
-            propósito para rentabilizar o seu negócio.
+            Este é um equívoco cometido por 95% dos empreendedores que fecharam
+            as portas: a ausência de planejamento. Entenda por que é crucial ter
+            a Rentabileasy como seu parceiro de negócios:
           </p>
         </div>
         {mobile ? (
