@@ -934,7 +934,7 @@ footer {
     font-size: 2rem;
   }
   #jobs-text p {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
   }
   #title-descri {
     min-width: 50%;
@@ -963,6 +963,10 @@ footer {
 
   .card {
     padding: 1rem 1rem;
+  }
+
+  .card p {
+    font-size: 1.2rem;
   }
 
   #price-cards {
