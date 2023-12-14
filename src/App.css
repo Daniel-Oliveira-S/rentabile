@@ -315,6 +315,7 @@ header {
   justify-content: center;
   align-items: center;
   gap: 0.5rem;
+  width: 100%;
 }
 
 #jobs-text h1 {
@@ -920,11 +921,11 @@ footer {
   }
 
   #jobs-text {
-    width: 80%;
+    width: 100%;
   }
 
   .div-text {
-    gap: 3rem;
+    gap: 12rem;
   }
   .div-text img {
     display: flex;
@@ -934,7 +935,7 @@ footer {
     font-size: 2rem;
   }
   #jobs-text p {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
   }
   #title-descri {
     min-width: 50%;

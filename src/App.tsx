@@ -246,7 +246,11 @@ function App() {
               width={150}
               alt=""
             />
-            <h1>Para quem não tem para onde ir, qualquer caminho serve</h1>
+            <h1>
+              {" "}
+              Será que pra quem não sabe para onde ir, qualquer caminho serve,
+              mesmo?
+            </h1>
             <img
               src="http://rentabileasy.com.br/wp-content/uploads/2023/12/Group-5-1.png"
               width={150}
@@ -254,9 +258,10 @@ function App() {
             />
           </div>
           <p>
-            Este é um equívoco cometido por 95% dos empreendedores que fecharam
-            as portas: a ausência de planejamento. Entenda por que é crucial ter
-            a Rentabileasy como seu parceiro de negócios:
+            Estudos mostram que a falta de planejamento foi o principal motivo
+            para 95% de empreendedores que fecharam as portas nos últimos anos.
+            Entenda por que é crucial ter a Rentabileasy como seu parceiro de
+            negócios:
           </p>
         </div>
         {mobile ? (
