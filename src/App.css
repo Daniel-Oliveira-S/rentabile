@@ -966,18 +966,18 @@ footer {
 
   .circle-title {
     gap: 2rem;
-    width: 40%;
+    width: 33.33%;
   }
   .circle-title h1 {
     font-size: 1.8rem;
   }
 
   .card {
-    padding: 1rem 1rem;
+    padding: 1rem 0.5rem;
   }
 
   .card p {
-    font-size: 1.05rem;
+    font-size: 1rem;
   }
 
   #price-cards {
