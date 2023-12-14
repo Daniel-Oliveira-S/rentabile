@@ -31,20 +31,20 @@ function App() {
   const slides = [
     {
       name: "Vera Maria Garaude - Garaude escritório de advocacia",
-      img: "https://rentabileasy.com.br/wp-content/uploads/2022/06/garaude.webp",
+      img: "https://news.rentabileasy.com.br/wp-content/uploads/2022/06/garaude.webp",
       text: "Clientes há 7 anos, a empresa oferece assessoria completa. Após o falecimento de meu pai, foram cruciais na gestão empresarial, contábil e tributária, proporcionando redução de impostos e tranquilidade operacional.",
       class: "slide-prev",
     },
     {
       name: "Silvana Perez - Espaço Ser - Saúde, Educação e Reabilitação",
-      img: "https://rentabileasy.com.br/wp-content/uploads/2022/06/EspacoSER_Logo-150x150.webp",
+      img: "https://news.rentabileasy.com.br/wp-content/uploads/2022/06/EspacoSER_Logo-150x150.webp",
       text: "Atendimento eficiente e consultoria excelente. A empresa proporciona tranquilidade na gestão contábil, permitindo mais tempo e criatividade para investir no negócio. Recomendamos para outras empresas sem hesitação.",
       class: "slide",
     },
 
     {
       name: "Juliana Rodrigues - All smiles Odontologia",
-      img: "https://rentabileasy.com.br/wp-content/uploads/2022/06/allsmiles-1-150x150.png",
+      img: "https://news.rentabileasy.com.br/wp-content/uploads/2022/06/allsmiles-1-150x150.png",
       text: "Empresa idônea, profissionais competentes e atenciosos. Reestruturou a All Smiles Odontologia, elevando-nos a um novo patamar e impulsionando nossa lucratividade. Recomendo a outras empresas.",
       class: "slide-next",
     },
