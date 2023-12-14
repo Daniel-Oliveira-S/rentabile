@@ -90,22 +90,30 @@ function App() {
           </button>
           <ul id="menu">
             <li>
-              <a href="">O que é?</a>
+              <a onClick={handleMenu} href="#hero">
+                O que é?
+              </a>
             </li>
             <li>
-              <a href="">Para quem?</a>
+              <a onClick={handleMenu} href="#jobs">
+                Para quem?
+              </a>
             </li>
             <li>
-              <a href="">Serviços</a>
+              <a onClick={handleMenu} href="#prices">
+                Serviços
+              </a>
             </li>
             <li>
-              <a href="">Blog</a>
+              <a onClick={handleMenu} href="">
+                Blog
+              </a>
             </li>
           </ul>
-          <a href="" id="open">
+          <a href="#form" id="open">
             Quero abrir minha empresa
           </a>
-          <a href="" id="change">
+          <a href="#form" id="change">
             Quero descomplicar
             <br />
             minha contabilidade
@@ -329,7 +337,7 @@ function App() {
           </div>
         </div>
 
-        <a href="">Quero essa equipe comigo!</a>
+        <a href="#form">Quero essa equipe comigo!</a>
       </section>
 
       <section id="prices">
@@ -344,7 +352,7 @@ function App() {
             <div className="card-text">
               <h1>A partir de:</h1>
               <h2>R$ 299,00</h2>
-              <Button href="">Quero contratar</Button>
+              <Button href="#form">Quero contratar</Button>
             </div>
           </div>
           <div className="price">
@@ -353,7 +361,7 @@ function App() {
             <div className="card-text">
               <h1>A partir de:</h1>
               <h2>R$ 599,00</h2>
-              <Button href="">Quero contratar</Button>
+              <Button href="#form">Quero contratar</Button>
             </div>
           </div>
           <div className="price">
@@ -364,7 +372,7 @@ function App() {
                 Acesse um orçamento personalizado sob medida com diagnóstico
                 gratuito
               </p>
-              <Button href="">Quero contratar</Button>
+              <Button href="#form">Quero contratar</Button>
             </div>
           </div>
         </div>
@@ -520,14 +528,14 @@ function App() {
         </div>
         <div id="footer-by">
           <p>&copy; Copyright 2023 Abile • Todos os direitos reservados</p>
-          <div className="by-crowd">
+          <a href="https://crowd.app.br/" target="_blank" className="by-crowd">
             <p>Desenvolvido por</p>
             <img
               src="http://rentabileasy.com.br/wp-content/uploads/2023/12/logo.3942e0c5ddc8cb64ca03f061264c9d15-1.png"
               alt=""
               width={150}
             />
-          </div>
+          </a>
         </div>
       </footer>
     </body>
