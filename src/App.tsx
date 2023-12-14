@@ -82,11 +82,11 @@ function App() {
   return (
     <body>
       <header id="header">
-        <nav id={`nav${isMenuOpen ? "-true" : ""}`}>
+        <nav id="nav" className={`${isMenuOpen ? "active" : ""}`}>
           <img src={logo} alt="" className="logo" />
 
-          <button id="close" onClick={handleMenu}>
-            X
+          <button id="btn-mobile" onClick={handleMenu}>
+            <span id="hamburger"></span>
           </button>
           <ul id="menu">
             <li>
