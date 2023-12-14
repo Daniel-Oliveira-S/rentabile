@@ -88,28 +88,48 @@ function App() {
           <button id="btn-mobile" onClick={handleMenu}>
             <span id="hamburger"></span>
           </button>
-          <ul id="menu">
-            <li>
-              <a onClick={handleMenu} href="#hero">
-                O que é?
-              </a>
-            </li>
-            <li>
-              <a onClick={handleMenu} href="#jobs">
-                Para quem?
-              </a>
-            </li>
-            <li>
-              <a onClick={handleMenu} href="#prices">
-                Serviços
-              </a>
-            </li>
-            <li>
-              <a onClick={handleMenu} href="">
-                Blog
-              </a>
-            </li>
-          </ul>
+          {mobile ? (
+            <ul id="menu">
+              <li>
+                <a onClick={handleMenu} href="#hero">
+                  O que é?
+                </a>
+              </li>
+              <li>
+                <a onClick={handleMenu} href="#jobs">
+                  Para quem?
+                </a>
+              </li>
+              <li>
+                <a onClick={handleMenu} href="#prices">
+                  Serviços
+                </a>
+              </li>
+              <li>
+                <a
+                  onClick={handleMenu}
+                  href="https://news.rentabileasy.com.br/blog/"
+                >
+                  Blog
+                </a>
+              </li>
+            </ul>
+          ) : (
+            <ul id="menu">
+              <li>
+                <a href="#hero">O que é?</a>
+              </li>
+              <li>
+                <a href="#jobs">Para quem?</a>
+              </li>
+              <li>
+                <a href="#prices">Serviços</a>
+              </li>
+              <li>
+                <a href="https://news.rentabileasy.com.br/blog/">Blog</a>
+              </li>
+            </ul>
+          )}
           <a href="#form" id="open">
             Quero abrir minha empresa
           </a>

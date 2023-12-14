@@ -867,18 +867,19 @@ footer {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    width: 80%;
+    width: 82%;
     margin: 0 auto;
   }
 
   #hero-content img {
-    width: 50%;
+    width: 45%;
     margin-top: 2rem;
   }
 
   #hero-text {
     align-items: start;
     max-width: 48%;
+    margin: 0 auto;
   }
 
   .blue {
