@@ -770,7 +770,7 @@ footer {
 @media screen and (min-width: 1280px) {
   #header {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     width: 100%;
     height: 100px;
@@ -945,6 +945,7 @@ footer {
   }
   #jobs-text p {
     font-size: 1.5rem;
+    width: 65%;
   }
   #title-descri {
     min-width: 50%;
@@ -976,7 +977,7 @@ footer {
   }
 
   .card p {
-    font-size: 1.2rem;
+    font-size: 1.05rem;
   }
 
   #price-cards {
