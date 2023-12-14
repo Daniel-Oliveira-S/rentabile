@@ -514,7 +514,7 @@ function App() {
           />
           <div id="form-text">
             <h1>Vamos rentabilizar?</h1>
-            <a href="https://wa.me/551141956006?text=Ol%C3%A1%2C+quero+contratar+um+plano">Fale com um especialista</a>
+            <a href="https://wa.me/551141956006?text=Ol%C3%A1%2C+gostaria+de+falar+com+um+especialista">Fale com um especialista</a>
           </div>
         </div>
       </section>
