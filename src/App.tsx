@@ -130,10 +130,10 @@ function App() {
               </li>
             </ul>
           )}
-          <a href="#form" id="open">
+          <a href="https://wa.me/551141956006?text=Quero+abrir+minha+empresa" id="open">
             Quero abrir minha empresa
           </a>
-          <a href="#form" id="change">
+          <a href="https://wa.me/551141956006?text=J%C3%A1+tenho+minha+empresa.+Quero+descomplicar+minha+contabilidade" id="change">
             Quero descomplicar
             <br />
             minha contabilidade
@@ -514,7 +514,7 @@ function App() {
           />
           <div id="form-text">
             <h1>Vamos rentabilizar?</h1>
-            <a href="">Fale com um especialista</a>
+            <a href="https://wa.me/551141956006?text=Ol%C3%A1%2C+quero+contratar+um+plano">Fale com um especialista</a>
           </div>
         </div>
       </section>
