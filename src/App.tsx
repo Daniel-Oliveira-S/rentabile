@@ -540,7 +540,7 @@ function App() {
           <div id="footer-product">
             <p>A Rentabileasy é um produto</p>
             <img
-              src="https://rentabileasy.com.br/wp-content/uploads/2022/06/AbileConsultingGroup_Logo_Negatva.png"
+              src="https://news.rentabileasy.com.br/wp-content/uploads/2022/06/AbileConsultingGroup_Logo_Negatva.png"
               alt=""
               width={300}
             />
