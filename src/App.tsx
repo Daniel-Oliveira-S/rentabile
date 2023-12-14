@@ -157,7 +157,7 @@ function App() {
             </div>
 
             <img
-              src="http://rentabileasy.com.br/wp-content/uploads/2023/10/RENTABILEASY-img01-2.png"
+              src="http://news.rentabileasy.com.br/wp-content/uploads/2023/10/RENTABILEASY-img01-2.png"
               alt=""
             />
           </div>
@@ -178,7 +178,7 @@ function App() {
           <CheckCircle className="icon-check" weight="fill" color="#40ff76" />
           <p>Garanta o melhor regime tributário e fiscal para a sua empresa</p>
           <img
-            src="http://rentabileasy.com.br/wp-content/uploads/2023/12/Group-7-1.png"
+            src="http://news.rentabileasy.com.br/wp-content/uploads/2023/12/Group-7-1.png"
             alt=""
             width={150}
           />
@@ -187,7 +187,7 @@ function App() {
           <CheckCircle className="icon-check" weight="fill" color="#40ff76" />
           <p>Controles e processos que evitam desperdicios</p>
           <img
-            src="http://rentabileasy.com.br/wp-content/uploads/2023/12/Group-7-1.png"
+            src="http://news.rentabileasy.com.br/wp-content/uploads/2023/12/Group-7-1.png"
             alt=""
             width={150}
           />
@@ -196,7 +196,7 @@ function App() {
           <CheckCircle className="icon-check" weight="fill" color="#40ff76" />
           <p>Visão completa de todos os indicadores de resultados</p>
           <img
-            src="http://rentabileasy.com.br/wp-content/uploads/2023/12/Group-7-1.png"
+            src="http://news.rentabileasy.com.br/wp-content/uploads/2023/12/Group-7-1.png"
             alt=""
             width={150}
           />
@@ -205,7 +205,7 @@ function App() {
           <CheckCircle className="icon-check" weight="fill" color="#40ff76" />
           <p>Atendimento 100% humanizado, lado a lado com você</p>
           <img
-            src="http://rentabileasy.com.br/wp-content/uploads/2023/12/Group-7-1.png"
+            src="http://news.rentabileasy.com.br/wp-content/uploads/2023/12/Group-7-1.png"
             alt=""
             width={150}
           />
@@ -260,7 +260,7 @@ function App() {
           </div>
 
           <img
-            src="http://rentabileasy.com.br/wp-content/uploads/2023/10/img33.png"
+            src="http://news.rentabileasy.com.br/wp-content/uploads/2023/10/img33.png"
             alt=""
           />
         </div>
@@ -270,7 +270,7 @@ function App() {
         <div id="jobs-text">
           <div className="div-text">
             <img
-              src="http://rentabileasy.com.br/wp-content/uploads/2023/12/Group-5-1.png"
+              src="http://news.rentabileasy.com.br/wp-content/uploads/2023/12/Group-5-1.png"
               width={150}
               alt=""
             />
@@ -280,7 +280,7 @@ function App() {
               mesmo?
             </h1>
             <img
-              src="http://rentabileasy.com.br/wp-content/uploads/2023/12/Group-5-1.png"
+              src="http://news.rentabileasy.com.br/wp-content/uploads/2023/12/Group-5-1.png"
               width={150}
               alt=""
             />
@@ -294,13 +294,13 @@ function App() {
         </div>
         {mobile ? (
           <img
-            src="http://rentabileasy.com.br/wp-content/uploads/2023/12/Group-4-1.png"
+            src="http://news.rentabileasy.com.br/wp-content/uploads/2023/12/Group-4-1.png"
             alt=""
             className="compare-mob"
           />
         ) : (
           <img
-            src="http://rentabileasy.com.br/wp-content/uploads/2023/12/comparar-3.png"
+            src="http://news.rentabileasy.com.br/wp-content/uploads/2023/12/comparar-3.png"
             alt=""
           />
         )}
@@ -317,7 +317,7 @@ function App() {
         <div id="circle-text">
           <div className="circle-title">
             <img
-              src="http://rentabileasy.com.br/wp-content/uploads/2023/11/Bolota01.png"
+              src="http://news.rentabileasy.com.br/wp-content/uploads/2023/11/Bolota01.png"
               alt=""
             />
             <h1>Não são robôs, são experts.</h1>
@@ -330,7 +330,7 @@ function App() {
           </div>
           <div className="circle-title">
             <img
-              src="http://rentabileasy.com.br/wp-content/uploads/2023/11/bolota02.png"
+              src="http://news.rentabileasy.com.br/wp-content/uploads/2023/11/bolota02.png"
               alt=""
             />
             <h1>Parcerias e Novos Negócios.</h1>
@@ -344,7 +344,7 @@ function App() {
           </div>
           <div className="circle-title">
             <img
-              src="http://rentabileasy.com.br/wp-content/uploads/2023/11/bolota04.png"
+              src="http://news.rentabileasy.com.br/wp-content/uploads/2023/11/bolota04.png"
               alt=""
             />
             <h1>Consultoria Estratégica.</h1>
@@ -404,7 +404,7 @@ function App() {
           <div className="icon">
             <img
               width={100}
-              src="http://rentabileasy.com.br/wp-content/uploads/2022/06/LP_Rentabileasy_construcao-1.svg"
+              src="http://news.rentabileasy.com.br/wp-content/uploads/2022/06/LP_Rentabileasy_construcao-1.svg"
               alt=""
             />
             <p>Construção civil</p>
@@ -412,7 +412,7 @@ function App() {
           <div className="icon">
             <img
               width={100}
-              src="http://rentabileasy.com.br/wp-content/uploads/2022/06/LP_Rentabileasy_coworking.svg"
+              src="http://news.rentabileasy.com.br/wp-content/uploads/2022/06/LP_Rentabileasy_coworking.svg"
               alt=""
             />
             <p>Centro de negócios (Coworkings)</p>
@@ -420,7 +420,7 @@ function App() {
           <div className="icon">
             <img
               width={100}
-              src="http://rentabileasy.com.br/wp-content/uploads/2022/06/LP_Rentabileasy_tech.svg"
+              src="http://news.rentabileasy.com.br/wp-content/uploads/2022/06/LP_Rentabileasy_tech.svg"
               alt=""
             />
             <p>Empresas de Tecnologia</p>
@@ -428,7 +428,7 @@ function App() {
           <div className="icon">
             <img
               width={100}
-              src="http://rentabileasy.com.br/wp-content/uploads/2022/06/LP_Rentabileasy_franquia.svg"
+              src="http://news.rentabileasy.com.br/wp-content/uploads/2022/06/LP_Rentabileasy_franquia.svg"
               alt=""
             />
             <p>Franquias</p>
@@ -436,7 +436,7 @@ function App() {
           <div className="icon">
             <img
               width={100}
-              src="http://rentabileasy.com.br/wp-content/uploads/2022/06/LP_Rentabileasy_holding-1.svg"
+              src="http://news.rentabileasy.com.br/wp-content/uploads/2022/06/LP_Rentabileasy_holding-1.svg"
               alt=""
             />
             <p>Holdings</p>
@@ -444,7 +444,7 @@ function App() {
           <div className="icon">
             <img
               width={100}
-              src="http://rentabileasy.com.br/wp-content/uploads/2022/06/LP_Rentabileasy_hoteis-1.svg"
+              src="http://news.rentabileasy.com.br/wp-content/uploads/2022/06/LP_Rentabileasy_hoteis-1.svg"
               alt=""
             />
             <p>Hotéis e Pousadas</p>
@@ -452,7 +452,7 @@ function App() {
           <div className="icon">
             <img
               width={100}
-              src="http://rentabileasy.com.br/wp-content/uploads/2022/06/LP_Rentabileasy_PJ-1.svg"
+              src="http://news.rentabileasy.com.br/wp-content/uploads/2022/06/LP_Rentabileasy_PJ-1.svg"
               alt=""
             />
             <p>Prestadores de Serviços</p>
@@ -460,7 +460,7 @@ function App() {
           <div className="icon">
             <img
               width={100}
-              src="http://rentabileasy.com.br/wp-content/uploads/2022/06/LP_Rentabileasy_saude.svg"
+              src="http://news.rentabileasy.com.br/wp-content/uploads/2022/06/LP_Rentabileasy_saude.svg"
               alt=""
             />
             <p>Profissionais e Clínicas da Área da Saúde</p>
@@ -468,7 +468,7 @@ function App() {
           <div className="icon">
             <img
               width={100}
-              src="http://rentabileasy.com.br/wp-content/uploads/2022/06/LP_Rentabileasy_advogado.svg"
+              src="http://news.rentabileasy.com.br/wp-content/uploads/2022/06/LP_Rentabileasy_advogado.svg"
               alt=""
             />
             <p>Sociedades de Advogados</p>
@@ -476,7 +476,7 @@ function App() {
           <div className="icon">
             <img
               width={100}
-              src="http://rentabileasy.com.br/wp-content/uploads/2022/06/LP_Rentabileasy_startup-1.svg"
+              src="http://news.rentabileasy.com.br/wp-content/uploads/2022/06/LP_Rentabileasy_startup-1.svg"
               alt=""
             />
             <p>Startups</p>
@@ -509,7 +509,7 @@ function App() {
       <section id="form">
         <div id="form-content">
           <img
-            src="http://rentabileasy.com.br/wp-content/uploads/2023/12/image-59.png"
+            src="http://news.rentabileasy.com.br/wp-content/uploads/2023/12/image-59.png"
             alt=""
           />
           <div id="form-text">
@@ -551,7 +551,7 @@ function App() {
           <a href="https://crowd.app.br/" target="_blank" className="by-crowd">
             <p>Desenvolvido por</p>
             <img
-              src="http://rentabileasy.com.br/wp-content/uploads/2023/12/logo.3942e0c5ddc8cb64ca03f061264c9d15-1.png"
+              src="http://news.rentabileasy.com.br/wp-content/uploads/2023/12/logo.3942e0c5ddc8cb64ca03f061264c9d15-1.png"
               alt=""
               width={150}
             />
