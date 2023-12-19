@@ -96,7 +96,7 @@ function App() {
                 </a>
               </li>
               <li>
-                <a onClick={handleMenu} href="#jobs">
+                <a onClick={handleMenu} href="#for">
                   Para quem?
                 </a>
               </li>
@@ -120,7 +120,7 @@ function App() {
                 <a href="#hero">O que é?</a>
               </li>
               <li>
-                <a href="#jobs">Para quem?</a>
+                <a href="#for">Para quem?</a>
               </li>
               <li>
                 <a href="#prices">Serviços</a>
@@ -130,7 +130,7 @@ function App() {
               </li>
             </ul>
           )}
-          <a href="https://wa.me/551141956006?text=Quero+abrir+minha+empresa" id="open">
+          <a href="https://wa.me/551141956006?text=Olá,+tudo+bem?+Quero+abrir+minha+empresa" id="open">
             Quero abrir minha empresa
           </a>
           <a href="https://wa.me/551141956006?text=J%C3%A1+tenho+minha+empresa.+Quero+descomplicar+minha+contabilidade" id="change">
