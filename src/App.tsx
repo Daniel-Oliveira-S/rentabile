@@ -532,7 +532,7 @@ function App() {
               <Phone size={20} color="#392f6f" />
               <p>+55 (11) 4195 - 6006</p>
             </div>
-            <a href="" className="social-icon">
+            <a href="https://www.instagram.com/rentabileasy_/" target="_blank" className="social-icon">
               <InstagramLogo color="#3eb161" size={30} />
               <p>Segue lá</p>
             </a>
