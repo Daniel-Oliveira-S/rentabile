@@ -522,10 +522,10 @@ function App() {
       <footer>
         <div id="footer-content">
           <div id="footer-text">
-            <p>Calçada dos Ipês, 51</p>
-            <p>Centro Comercial Alphaville</p>
-            <p>Alphaville - Barueri/SP</p>
-            <p>CEP 06453 - 025</p>
+            <p>Av. Yojiro Takaoka, 4384</p>
+            <p>Santana de parnaíba/SP</p>
+            <p>Alphaville</p>
+            <p>CEP 06541-038</p>
           </div>
           <div id="footer-social">
             <div className="social-icon">
