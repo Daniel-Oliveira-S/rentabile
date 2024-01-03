@@ -884,7 +884,7 @@ footer {
   }
 
   .blue {
-    background: #392f6f;
+    
     height: 200px;
   }
   .presentation {
@@ -897,7 +897,8 @@ footer {
   .presentation iframe {
     width: 755px;
     height: 390px;
-    margin-top: -15rem;
+    margin-top: -20rem;
+
   }
   #offers {
     flex-direction: row;
