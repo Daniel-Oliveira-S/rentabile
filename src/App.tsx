@@ -130,10 +130,10 @@ function App() {
               </li>
             </ul>
           )}
-          <a href="https://wa.me/551141956006?text=Olá,+tudo+bem?+Quero+abrir+minha+empresa" id="open">
+          <a href="https://typebot.co/rentabileasy-form" id="open">
             Quero abrir minha empresa
           </a>
-          <a href="https://wa.me/551141956006?text=J%C3%A1+tenho+minha+empresa.+Quero+descomplicar+minha+contabilidade" id="change">
+          <a href="https://typebot.co/rentabileasy-form" id="change">
             Quero descomplicar
             <br />
             minha contabilidade
