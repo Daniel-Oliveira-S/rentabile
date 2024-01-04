@@ -169,7 +169,7 @@ function App() {
       <iframe  
       src="https://www.youtube.com/embed/eHje2PAXj8c" 
       title="Sobre a rentabileasy"  
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" ></iframe>
       </div>
 
       <div id="offers">
