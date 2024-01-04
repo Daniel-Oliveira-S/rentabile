@@ -166,7 +166,7 @@ function App() {
 
       <div className="blue"></div>
       <div className="presentation">
-      <iframe width="1236" height="695" src="https://www.youtube.com/embed/eHje2PAXj8c" title="Sobre a rentabileasy"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      <iframe  src="https://www.youtube.com/embed/eHje2PAXj8c" title="Sobre a rentabileasy"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
       </div>
 
       <div id="offers">
