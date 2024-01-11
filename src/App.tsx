@@ -133,7 +133,7 @@ function App() {
           <a href="https://typebot.co/quero-abrir-minha-empresa" target="_blank" id="open">
             Quero abrir minha empresa
           </a>
-          <a href="https://typebot.co/rentabileasy-form" target="_blank" id="change">
+          <a href="https://typebot.co/rentabileasy-descomplicar" target="_blank" id="change">
             Quero descomplicar
             <br />
             minha contabilidade
