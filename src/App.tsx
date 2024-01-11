@@ -113,14 +113,18 @@ function App() {
                   Blog
                 </a>
               </li>
-              <a href="https://typebot.co/quero-abrir-minha-empresa" target="_blank" id="open">
+              <li>
+              <a href="https://typebot.co/quero-abrir-minha-empresa" target="_blank" >
             Quero abrir minha empresa
           </a>
-          <a href="https://typebot.co/rentabileasy-descomplicar" target="_blank" id="change">
+          </li>
+          <li>
+          <a href="https://typebot.co/rentabileasy-descomplicar" target="_blank" >
             Quero descomplicar
             <br />
             minha contabilidade
           </a>
+          </li>
             </ul>
           ) : (
             <ul id="menu">
