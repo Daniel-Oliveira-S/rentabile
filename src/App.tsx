@@ -383,7 +383,7 @@ function App() {
             <div className="card-text">
               <h1>A partir de:</h1>
               <h2>R$ 299,00</h2>
-              <Button href="#form">Quero contratar</Button>
+              <Button href="#footer-content">Quero contratar</Button>
             </div>
           </div>
           <div className="price">
@@ -392,7 +392,7 @@ function App() {
             <div className="card-text">
               <h1>A partir de:</h1>
               <h2>R$ 599,00</h2>
-              <Button href="#form">Quero contratar</Button>
+              <Button href="#footer-content">Quero contratar</Button>
             </div>
           </div>
           <div className="price">
@@ -403,7 +403,7 @@ function App() {
                 Acesse um orçamento personalizado sob medida com diagnóstico
                 gratuito
               </p>
-              <Button href="#form">Quero contratar</Button>
+              <Button href="#footer-content">Quero contratar</Button>
             </div>
           </div>
         </div>
