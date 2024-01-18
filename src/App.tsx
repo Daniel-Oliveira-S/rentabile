@@ -9,6 +9,17 @@ import logo from "./assets/logo.png";
 import { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight, Phone } from "lucide-react";
 import { Button } from "./components/button";
+
+import Hero from "../public/hero-fot.svg"
+import black from "../public/mulhernegra.svg"
+import compareDesk from "../public/comparar-3.svg"
+import compareMob from "../public/comparar-mob.svg"
+import circle1 from "../public/Bolota01.svg"
+import circle2 from "../public/bolota02.svg"
+import circle3 from "../public/bolota03.svg"
+import formFoto from "../public/form-fot.svg"
+import abile from "../public/AbileConsultingGroup_Logo_Negatva.svg"
+
 function App() {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [mobile, setMobile] = useState(false);
@@ -169,7 +180,7 @@ function App() {
             </div>
 
             <img
-              src="http://news.rentabileasy.com.br/wp-content/uploads/2023/10/RENTABILEASY-img01-2.png"
+              src={Hero}
               alt=""
             />
           </div>
@@ -189,7 +200,6 @@ function App() {
           <CheckCircle className="icon-check" weight="fill" color="#40ff76" />
           <p>Garanta o melhor regime tributário e fiscal para a sua empresa</p>
           <img
-            src="http://news.rentabileasy.com.br/wp-content/uploads/2023/12/Group-7-1.png"
             alt=""
             width={150}
           />
@@ -197,29 +207,17 @@ function App() {
         <div className="icon-text">
           <CheckCircle className="icon-check" weight="fill" color="#40ff76" />
           <p>Controles e processos que evitam desperdicios</p>
-          <img
-            src="http://news.rentabileasy.com.br/wp-content/uploads/2023/12/Group-7-1.png"
-            alt=""
-            width={150}
-          />
+        
         </div>
         <div className="icon-text">
           <CheckCircle className="icon-check" weight="fill" color="#40ff76" />
           <p>Visão completa de todos os indicadores de resultados</p>
-          <img
-            src="http://news.rentabileasy.com.br/wp-content/uploads/2023/12/Group-7-1.png"
-            alt=""
-            width={150}
-          />
+        
         </div>
         <div className="icon-text">
           <CheckCircle className="icon-check" weight="fill" color="#40ff76" />
           <p>Atendimento 100% humanizado, lado a lado com você</p>
-          <img
-            src="http://news.rentabileasy.com.br/wp-content/uploads/2023/12/Group-7-1.png"
-            alt=""
-            width={150}
-          />
+        
         </div>
       </div>
 
@@ -271,7 +269,7 @@ function App() {
           </div>
 
           <img
-            src="http://news.rentabileasy.com.br/wp-content/uploads/2023/10/img33.png"
+            src={black}
             alt=""
           />
         </div>
@@ -280,21 +278,13 @@ function App() {
       <section id="jobs">
         <div id="jobs-text">
           <div className="div-text">
-            <img
-              src="http://news.rentabileasy.com.br/wp-content/uploads/2023/12/Group-5-1.png"
-              width={150}
-              alt=""
-            />
+          
             <h1>
               {" "}
               Será que pra quem não sabe para onde ir, qualquer caminho serve,
               mesmo?
             </h1>
-            <img
-              src="http://news.rentabileasy.com.br/wp-content/uploads/2023/12/Group-5-1.png"
-              width={150}
-              alt=""
-            />
+            
           </div>
           <p>
             Estudos mostram que a falta de planejamento foi o principal motivo
@@ -305,13 +295,13 @@ function App() {
         </div>
         {mobile ? (
           <img
-            src="http://news.rentabileasy.com.br/wp-content/uploads/2023/12/Group-4-1.png"
+            src={compareMob}
             alt=""
             className="compare-mob"
           />
         ) : (
           <img
-            src="http://news.rentabileasy.com.br/wp-content/uploads/2023/12/comparar-3.png"
+            src={compareDesk}
             alt=""
           />
         )}
@@ -328,7 +318,7 @@ function App() {
         <div id="circle-text">
           <div className="circle-title">
             <img
-              src="http://news.rentabileasy.com.br/wp-content/uploads/2023/11/Bolota01.png"
+              src={circle1}
               alt=""
             />
             <h1>Não são robôs, são experts.</h1>
@@ -341,7 +331,7 @@ function App() {
           </div>
           <div className="circle-title">
             <img
-              src="http://news.rentabileasy.com.br/wp-content/uploads/2023/11/bolota02.png"
+              src={circle2}
               alt=""
             />
             <h1>Parcerias e Novos Negócios.</h1>
@@ -355,7 +345,7 @@ function App() {
           </div>
           <div className="circle-title">
             <img
-              src="http://news.rentabileasy.com.br/wp-content/uploads/2023/11/bolota04.png"
+              src={circle3}
               alt=""
             />
             <h1>Consultoria Estratégica.</h1>
@@ -520,7 +510,7 @@ function App() {
       <section id="form">
         <div id="form-content">
           <img
-            src="http://news.rentabileasy.com.br/wp-content/uploads/2023/12/image-59.png"
+            src={formFoto}
             alt=""
           />
           <div id="form-text">
@@ -551,7 +541,7 @@ function App() {
           <div id="footer-product">
             <p>A Rentabileasy é um produto</p>
             <img
-              src="https://news.rentabileasy.com.br/wp-content/uploads/2022/06/AbileConsultingGroup_Logo_Negatva.png"
+              src={abile}
               alt=""
               width={300}
             />
