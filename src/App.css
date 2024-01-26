@@ -644,6 +644,7 @@ header {
   justify-content: center;
   gap: 1rem;
   text-align: center;
+  margin-bottom: 2rem;
 }
 
 #form-text h1 {
@@ -1051,7 +1052,7 @@ footer {
     grid-template-columns: repeat(3, 30%);
     justify-content: center;
     align-items: center;
-    margin: .5rem auto;
+    margin: 0 auto;
   }
 
   #footer-text {
