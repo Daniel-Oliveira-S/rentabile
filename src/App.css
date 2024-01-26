@@ -650,7 +650,7 @@ header {
   font-family: "Syne", sans-serif;
   font-size: 1.5rem;
   font-weight: 700;
-  color: #fff;
+  color: #268843;
   text-align: center;
 }
 
@@ -661,6 +661,7 @@ header {
   color: #fff;
   text-align: center;
   border: 2px solid #fff;
+  background: #268843;
   padding: 1rem;
   border-radius: 0.8rem;
   transition: all 0.3s ease;
@@ -669,6 +670,7 @@ header {
 #form-text a:hover {
   background: #fff;
   color: #268843;
+  border: 2px solid #268843;
 }
 
 footer {
@@ -1024,11 +1026,12 @@ footer {
     margin-top: 1rem;
   }
   .slide {
-    padding: 3rem 2rem;
-    width: 50%;
+    padding: 5rem 2rem;
+    width: 100%;
   }
   .slide p {
     text-align: center;
+    width: 800px;
   }
 
   #form-content {
@@ -1044,7 +1047,7 @@ footer {
     grid-template-columns: repeat(3, 30%);
     justify-content: center;
     align-items: center;
-    margin: 1rem auto;
+    margin: .5rem auto;
   }
 
   #footer-text {
