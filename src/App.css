@@ -769,6 +769,10 @@ footer {
   gap: 0.5rem;
   margin-bottom: 2rem;
 }
+.news {
+  font-family: "Syne", sans-serif;
+  color: #fff;
+}
 
 @media screen and (min-width: 1280px) {
   #header {

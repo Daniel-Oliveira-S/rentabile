@@ -521,6 +521,9 @@ function App() {
               <InstagramLogo color="#3eb161" size={30} />
               <p>Segue lá</p>
             </a>
+            <a href="" className="news">
+              Assine nossa newsletter aqui!
+            </a>
           </div>
           <div id="footer-product">
             <p>A Rentabileasy é um produto</p>
