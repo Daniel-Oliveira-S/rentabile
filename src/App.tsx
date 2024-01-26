@@ -17,7 +17,6 @@ import compareMob from "../public/comparar-mob.svg"
 import circle1 from "../public/Bolota01.svg"
 import circle2 from "../public/bolota02.svg"
 import circle3 from "../public/bolota03.svg"
-import formFoto from "../public/form-fot.svg"
 import abile from "../public/AbileConsultingGroup_Logo_Negatva.svg"
 
 function App() {
