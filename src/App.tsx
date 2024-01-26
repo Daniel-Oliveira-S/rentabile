@@ -498,7 +498,7 @@ function App() {
         </div>
         <div id="form-text">
             <h1>Vamos rentabilizar?</h1>
-            <a href="https://typebot.co/fale-com-especialista">Fale com um especialista</a>
+            <a href="https://typebot.co/fale-com-especialista" target="_blank">Fale com um especialista</a>
           </div>
       </section>
 
