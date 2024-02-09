@@ -149,14 +149,17 @@ header {
   align-items: center;
   gap: 1rem;
   margin: 4rem auto 0;
+  border: 2px solid #fff;
+  border-radius: .5rem;
+  padding: 1rem 0;
 }
 
 form p{
   color: #fff;
-  width: 400px;
+  width: 425px;
   margin: 0 auto;
-  text-align: center;
   font-size: 1.15rem;
+  text-align: center;
 }
 
 form input{

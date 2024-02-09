@@ -170,9 +170,15 @@ function App() {
             </div>
 
 <form action="https://formsubmit.co/camilaribeiro.marketing@gmail.com" method="post">
-<p>O Rentabileasy te ajuda a descomplicar a burocracia e impulsionar seu negócio.
-
+<p><strong>O Rentabileasy te ajuda a descomplicar a burocracia e impulsionar seu negócio.
+</strong>
+<br />
+<br />
 Preencha os campos a seguir que entraremos em contato o mais breve possível.</p>
+
+<input type="hidden" name="_captcha" value="false"></input>
+<input type="text" name="_honey" style={{display: "none"}}></input>
+<input type="hidden" name="_template" value="table"></input>
 <label htmlFor="">Nome completo</label>
             <input type="text" name="Name" id="Name" />
             <label htmlFor="">Email</label>
