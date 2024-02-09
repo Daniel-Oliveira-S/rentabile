@@ -131,6 +131,7 @@ header {
   background: #00000085;
   height: 100%;
   gap: 3rem;
+  font-family: "Syne", sans-serif;
 }
 
 .container {
@@ -140,12 +141,34 @@ header {
   align-items: center;
 }
 
-#hero-content img {
-  margin-top: 1rem;
-  width: 350px;
-  margin: 0 auto;
+#hero-content form{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin: 4rem auto 0;
 }
 
+form p{
+  color: #fff;
+  width: 400px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 1.15rem;
+}
+
+form input{
+  width: 30%;
+  border-radius: .25rem;
+  border: none;
+  padding: .75rem 2rem;
+}
+
+form label{
+  color: #fff;
+}
 #hero-text {
   display: flex;
   flex-direction: column;
@@ -178,7 +201,7 @@ header {
   margin-bottom: 1rem;
 }
 
-#hero-text a {
+#transform {
   font-family: "Syne", sans-serif;
   font-size: 1rem;
   font-weight: 600;
@@ -189,9 +212,10 @@ header {
   text-align: center;
   transition: all 0.3s ease;
   padding: 0.75rem 0.75rem;
+  background: none;
 }
 
-#hero-text a:hover {
+#transform:hover {
   background: #4aff81;
   color: #392f6f;
 }
@@ -869,6 +893,7 @@ footer {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    gap: 5rem;
   }
   .container {
     display: flex;
@@ -879,9 +904,9 @@ footer {
     margin: 0 auto;
   }
 
-  #hero-content img {
-    width: 45%;
-    margin-top: 2rem;
+  #hero-content form{
+    margin-left: 5rem;
+    margin-top: -2rem
   }
 
   #hero-text {

@@ -150,13 +150,9 @@ function App() {
             </ul>
           )}
           <a href="https://typebot.co/quero-abrir-minha-empresa" target="_blank" id="open">
-            Quero abrir minha empresa
+            Faça um diagnóstico da sua empresa
           </a>
-          <a href="https://typebot.co/rentabileasy-descomplicar" target="_blank" id="change">
-            Quero descomplicar
-            <br />
-            minha contabilidade
-          </a>
+      
         </nav>
       </header>
       <section id="hero">
@@ -170,15 +166,22 @@ function App() {
                 profissionais e tenha o acompanhamento com especialistas de
                 negócios dedicados ao crescimento de sua empresa.
               </p>
-              <a href="#form" id="transform">
-                Quero transformar minha contabilidade
-              </a>
+          
             </div>
 
-            <img
-              src={Hero}
-              alt=""
-            />
+<form action="https://formsubmit.co/camilaribeiro.marketing@gmail.com" method="post">
+<p>O Rentabileasy te ajuda a descomplicar a burocracia e impulsionar seu negócio.
+
+Preencha os campos a seguir que entraremos em contato o mais breve possível.</p>
+<label htmlFor="">Nome completo</label>
+            <input type="text" name="Name" id="Name" />
+            <label htmlFor="">Email</label>
+            <input type="email" name="Email" id="Email" />
+          
+            <label htmlFor="Number">Whatsapp</label>
+            <input type="number"  name="Telefone" id="Number"/>
+            <button type="submit" id="transform">Quero lucrar mais</button>
+</form>
           </div>
         </div>
       </section>
