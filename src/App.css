@@ -144,7 +144,7 @@ header {
 #hero-content form{
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: 80%;
   justify-content: center;
   align-items: center;
   gap: 1rem;
