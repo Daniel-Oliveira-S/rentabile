@@ -156,7 +156,7 @@ header {
 
 form p{
   color: #fff;
-  width: 425px;
+  width: 300px;
   margin: 0 auto;
   font-size: 1.15rem;
   text-align: center;
@@ -208,19 +208,22 @@ form label{
   font-family: "Syne", sans-serif;
   font-size: 1rem;
   font-weight: 600;
-  color: #fff;
   text-decoration: none;
   border: 2px solid #fff;
   border-radius: 2rem;
   text-align: center;
   transition: all 0.3s ease;
-  padding: 0.75rem 0.75rem;
-  background: none;
+  padding: 0.75rem 3rem;
+  background: #4aff81;
+  color: #392f6f;
+
+
 }
 
 #transform:hover {
-  background: #4aff81;
-  color: #392f6f;
+  background: none;
+  color: #fff;
+
 }
 
 .presentation iframe {
@@ -909,7 +912,12 @@ footer {
 
   #hero-content form{
     margin-left: 5rem;
-    margin-top: -2rem
+    margin-top: -2rem;
+    width:60%
+  }
+
+  form p{
+    width: 425px;
   }
 
   #hero-text {
