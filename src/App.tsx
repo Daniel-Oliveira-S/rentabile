@@ -10,7 +10,6 @@ import { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight, Phone } from "lucide-react";
 import { Button } from "./components/button";
 
-import Hero from "../public/hero-fot.svg"
 import black from "../public/mulhernegra.svg"
 import compareDesk from "../public/comparar-3.svg"
 import compareMob from "../public/comparar-mob.svg"
@@ -560,3 +559,4 @@ Preencha os campos a seguir que entraremos em contato o mais breve possível.<
 }
 
 export default App;
+ 
