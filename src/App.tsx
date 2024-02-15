@@ -135,7 +135,7 @@ function App() {
             </ul>
           )}
           <a href="https://typebot.co/diagnostico-rentabileasy" target="_blank" id="open">
-            Faça um diagnóstico da sua empresa
+           Quero um diagnóstico gratuito
           </a>
       
         </nav>
