@@ -178,13 +178,15 @@ Preencha os campos a seguir que entraremos em contato o mais breve possível.<
 <input type="hidden" name="_captcha" value="false"></input>
 <input type="text" name="_honey" style={{display: "none"}}></input>
 <input type="hidden" name="_template" value="table"></input>
-<label htmlFor="">Nome completo</label>
-            <input type="text" name="Name" id="Name" />
-            <label htmlFor="">Email</label>
-            <input type="email" name="Email" id="Email" />
+<label htmlFor="">Nome completo*</label>
+            <input type="text" name="Name" id="Name" required />
+            <label htmlFor="">Email*</label>
+            <input type="email" name="Email" id="Email"  required/>
           
-            <label htmlFor="Number">Whatsapp</label>
-            <input type="number"  name="Telefone" id="Number"/>
+            <label htmlFor="Number">Whatsapp*</label>
+            <input type="number"  name="Telefone" id="Number" required/>
+            <label htmlFor="Empresa">Empresa*</label>
+            <input type="text" id="Empresa" required/>
             <button type="submit" id="transform">Quero lucrar mais</button>
 </form>
           </div>
@@ -273,7 +275,7 @@ Preencha os campos a seguir que entraremos em contato o mais breve possível.<
           </div>
 
           <img
-            src={black}
+            src="https://news.rentabileasy.com.br/wp-content/uploads/2023/10/img33-1024x1024.png"
             alt=""
           />
         </div>
@@ -322,7 +324,7 @@ Preencha os campos a seguir que entraremos em contato o mais breve possível.<
         <div id="circle-text">
           <div className="circle-title">
             <img
-              src={circle1}
+              src="https://news.rentabileasy.com.br/wp-content/uploads/elementor/thumbs/Bolota01-qf3x64h5lrbzyrih3gcq9kocdyn9npdu2t8k1gc9fc.png"
               alt=""
             />
             <h1>Não são robôs, são experts.</h1>
@@ -335,7 +337,7 @@ Preencha os campos a seguir que entraremos em contato o mais breve possível.<
           </div>
           <div className="circle-title">
             <img
-              src={circle2}
+              src="https://news.rentabileasy.com.br/wp-content/uploads/elementor/thumbs/bolota04-qf3x6bzv4fmajn7jvjlqtis151m7da7orugfvo141k.png"
               alt=""
             />
             <h1>Parcerias e Novos Negócios.</h1>
@@ -349,7 +351,7 @@ Preencha os campos a seguir que entraremos em contato o mais breve possível.<
           </div>
           <div className="circle-title">
             <img
-              src={circle3}
+              src="https://news.rentabileasy.com.br/wp-content/uploads/elementor/thumbs/bolota02-qf3x67ao69fuxledmzklz1yq649dasp13770ha82wo.png"
               alt=""
             />
             <h1>Consultoria Estratégica.</h1>
