@@ -512,8 +512,6 @@ Preencha os campos a seguir que entraremos em contato o mais breve possível.<
           </div>
       </section>
 
-      
-
       <footer>
         <div id="footer-content">
           <div id="footer-text">
