@@ -113,15 +113,8 @@ function App() {
                 </a>
               </li>
               <li>
-              <a href="https://typebot.co/quero-abrir-minha-empresa" target="_blank" >
-            Quero abrir minha empresa
-          </a>
-          </li>
-          <li>
-          <a href="https://typebot.co/rentabileasy-descomplicar" target="_blank" >
-            Quero descomplicar
-            <br />
-            minha contabilidade
+              <a href="https://typebot.co/diagnostico-rentabileasy" target="_blank" id="open">
+            Faça um diagnóstico da sua empresa
           </a>
           </li>
             </ul>
@@ -141,7 +134,7 @@ function App() {
               </li>
             </ul>
           )}
-          <a href="https://typebot.co/quero-abrir-minha-empresa" target="_blank" id="open">
+          <a href="https://typebot.co/diagnostico-rentabileasy" target="_blank" id="open">
             Faça um diagnóstico da sua empresa
           </a>
       
@@ -357,7 +350,7 @@ Preencha os campos a seguir que entraremos em contato o mais breve possível.<
           </div>
         </div>
 
-        <a href="#form">Quero essa equipe comigo!</a>
+        <a href="#hero">Quero essa equipe comigo!</a>
       </section>
 
       <section id="prices">
