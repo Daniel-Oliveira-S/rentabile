@@ -10,9 +10,6 @@ import { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight, Phone } from "lucide-react";
 import { Button } from "./components/button";
 
-import compareDesk from "../public/comparar-3.svg"
-import compareMob from "../public/comparar-mob.svg"
-import abile from "../public/AbileConsultingGroup_Logo_Negatva.svg"
 
 function App() {
   const [currentSlide, setCurrentSlide] = useState(0);
