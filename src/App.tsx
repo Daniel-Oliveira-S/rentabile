@@ -529,7 +529,7 @@ Preencha os campos a seguir que entraremos em contato o mais breve possível.<
           <div id="footer-product">
             <p>A Rentabileasy é um produto</p>
             <img
-              src={abile}
+              src="https://news.rentabileasy.com.br/wp-content/uploads/elementor/thumbs/AbileConsultingGroup_Logo_Negatva-ppx2nc5pl1bfega4cbhs3rmdwy8s2jebp3h72mfbf0.png"
               alt=""
               width={300}
             />
