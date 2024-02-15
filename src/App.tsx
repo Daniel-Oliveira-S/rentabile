@@ -297,13 +297,13 @@ Preencha os campos a seguir que entraremos em contato o mais breve possível.<
         </div>
         {mobile ? (
           <img
-            src={compareMob}
+            src="https://news.rentabileasy.com.br/wp-content/uploads/2023/12/Group-4-1.png"
             alt=""
             className="compare-mob"
           />
         ) : (
           <img
-            src={compareDesk}
+            src="https://news.rentabileasy.com.br/wp-content/uploads/2023/12/comparar-3.png"
             alt=""
           />
         )}
