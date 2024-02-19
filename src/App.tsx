@@ -172,7 +172,7 @@ Preencha os campos a seguir que entraremos em contato o mais breve possível.<
             <label htmlFor="Number">Whatsapp*</label>
             <input type="number"  name="Telefone" id="Number" required/>
             <label htmlFor="Empresa">Empresa*</label>
-            <input type="text" id="Empresa" required/>
+            <input type="text" id="Empresa" name="Empresa" required/>
             <button type="submit" id="transform">Quero lucrar mais</button>
 </form>
           </div>
